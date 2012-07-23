@@ -25,3 +25,12 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+
+.DS_Store
+*.swp
+*.swo
+*~.nib
+*.log
+*.log.?
+
+*.pyc
