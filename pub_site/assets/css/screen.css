@@ -1,0 +1,114 @@
+h1,h2,h3,h4,h5 { font-family: 'Open Sans', serif; }
+h1 {  font-weight: 300; }
+h2 {  font-weight: 300; }
+h3 {  font-weight: 400; }
+h4 {  font-weight: 700; }
+h5 {  font-weight: 700; }
+.social li { opacity: 0.5;}
+.social li:hover { opacity: 1;}
+.brand {
+    text-indent: -9999px;
+    background: transparent url('/assets/images/db_logo.png') no-repeat 20px 5px;
+    background-size: 27px 27px;
+    opacity: 0.5;
+}
+.brand:hover {
+    opacity: 1;
+}
+
+/**** SPACING STYLES ****/
+.padding-none { padding:0; }
+.padding-top-none { padding-top:0; }
+.padding-right-none { padding-right:0; }
+.padding-bot-none { padding-bottom:0; }
+.padding-left-none { padding-left:0; }
+.padding-xsmall { padding:5px; }
+.padding-small { padding:10px; }
+.padding-med { padding:15px; }
+.padding-large { padding:20px; }
+.padding-xlarge { padding:25px; }
+
+.padding-vert-xsmall { padding-top:5px; padding-bottom:5px; }
+.padding-vert-small { padding-top:10px; padding-bottom:10px; }
+.padding-vert-med { padding-top:15px; padding-bottom:15px; }
+.padding-vert-large { padding-top:20px; padding-bottom:20px; }
+.padding-vert-xlarge { padding-top:25px; padding-bottom:25px; }
+
+.padding-horz-xsmall { padding-left:5px; padding-right:5px; }
+.padding-horz-small { padding-left:10px; padding-right:10px; }
+.padding-horz-med { padding-left:15px; padding-right:15px; }
+.padding-horz-large { padding-left:20px; padding-right:20px; }
+.padding-horz-xlarge { padding-left:25px; padding-right:25px; }
+
+.padding-top-xsmall { padding-top:5px; }
+.padding-top-small { padding-top:10px; }
+.padding-top-med { padding-top:15px; }
+.padding-top-large { padding-top:20px; }
+.padding-top-xlarge { padding-top:25px; }
+
+.padding-right-xsmall { padding-right:5px; }
+.padding-right-small { padding-right:10px; }
+.padding-right-med { padding-right:15px; }
+.padding-right-large { padding-right:20px; }
+.padding-right-xlarge { padding-right:25px; }
+
+.padding-bot-xsmall { padding-bottom:5px; }
+.padding-bot-small { padding-bottom:10px; }
+.padding-bot-med { padding-bottom:15px; }
+.padding-bot-large { padding-bottom:20px; }
+.padding-bot-xlarge { padding-bottom:25px; }
+
+.padding-left-xsmall { padding-left:5px; }
+.padding-left-small { padding-left:10px; }
+.padding-left-med { padding-left:15px; }
+.padding-left-large { padding-left:20px; }
+.padding-left-xlarge { padding-left:25px; }
+
+.margin-none { margin:0; }
+.margin-top-none { margin-top:0; }
+.margin-right-none { margin-right:0; }
+.margin-bot-none { margin-bottom:0; }
+.margin-left-none { margin-left:0; }
+.margin-xsmall { margin:5px; }
+.margin-small { margin:10px; }
+.margin-med { margin:15px; }
+.margin-large { margin:20px; }
+.margin-xlarge { margin:25px; }
+
+.margin-vert-xsmall { margin-top:5px; margin-bottom:5px; }
+.margin-vert-small { margin-top:10px; margin-bottom:10px; }
+.margin-vert-med { margin-top:15px; margin-bottom:15px; }
+.margin-vert-large { margin-top:20px; margin-bottom:20px; }
+.margin-vert-xlarge { margin-top:25px; margin-bottom:25px; }
+
+.margin-horz-xsmall { margin-left:5px; margin-right:5px; }
+.margin-horz-small { margin-left:10px; margin-right:10px; }
+.margin-horz-med { margin-left:15px; margin-right:15px; }
+.margin-horz-large { margin-left:20px; margin-right:20px; }
+.margin-horz-xlarge { margin-left:25px; margin-right:25px; }
+
+.margin-top-xsmall { margin-top:5px; }
+.margin-top-small { margin-top:10px; }
+.margin-top-med { margin-top:15px; }
+.margin-top-large { margin-top:20px; }
+.margin-top-xlarge { margin-top:25px; }
+
+.margin-right-xsmall { margin-right:5px; }
+.margin-right-small { margin-right:10px; }
+.margin-right-med { margin-right:15px; }
+.margin-right-large { margin-right:20px; }
+.margin-right-xlarge { margin-right:25px; }
+
+.margin-bot-xsmall { margin-bottom:5px; }
+.margin-bot-small { margin-bottom:10px; }
+.margin-bot-med { margin-bottom:15px; }
+.margin-bot-large { margin-bottom:20px; }
+.margin-bot-xlarge { margin-bottom:25px; }
+
+.margin-left-xsmall { margin-left:5px; }
+.margin-left-small { margin-left:10px; }
+.margin-left-med { margin-left:15px; }
+.margin-left-large { margin-left:20px; }
+.margin-left-xlarge { margin-left:25px; }
+
+

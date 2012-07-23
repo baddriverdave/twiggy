@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    {% include 'page.header.html' %}
+
+    {% if site.title %}<title>{% if title %}{{ title }} &ndash; {% endif %}{{ site.title }}{% if not title and site.subtitle %} &ndash; {{ site.subtitle }}{% endif %}</title>{% endif %}
+</head>
+
+<body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="{{ get_url() }}">{{ site.title }}</a>
+        <div class="nav-collapse">
+            <ul class="nav">
+                <li><a href="{{ get_url('resume/') }}">Resume</a></li>
+                <li><a href="{{ get_url('portfolio/') }}">Portfolio</a></li>
+                <li><a href="{{ get_url() }}">Blog</a></li>
+                {% if site.feed %}<li><a href="{{ get_url('feed.xml') }}">Feed</a></li>{% endif %}
+            </ul>
+
+            {% if site.social.values()|sort(true)|first %}
+            <div class="pull-right">
+                <ul class="nav social">
+                    {% if site.social.dribbble %}<li><a href="http://dribbble.com/{{ site.social.dribbble }}"><img src="{{ get_asset('images/social/dribbble.png') }}" width="16" height="16" alt="Dribbble"></a></li>{% endif %}
+                    {% if site.social.facebook %}<li><a href="https://www.facebook.com/{{ site.social.facebook }}"><img src="{{ get_asset('images/social/facebook.png') }}" width="16" height="16" alt="Facebook"></a></li>{% endif %}
+                    {% if site.social.github %}<li><a href="https://github.com/{{ site.social.github }}"><img src="{{ get_asset('images/social/github.png') }}" width="16" height="16" alt="GitHub"></a></li>{% endif %}
+                    {% if site.social.google_plus %}<li><a href="https://plus.google.com/{{ site.social.google_plus }}"><img src="{{ get_asset('images/social/google-plus.png') }}" width="16" height="16" alt="Google+"></a></li>{% endif %}
+                    {% if site.social.lastfm %}<li><a href="http://www.last.fm/user/{{ site.social.lastfm }}"><img src="{{ get_asset('images/social/lastfm.png') }}" width="16" height="16" alt="Last.fm"></a></li>{% endif %}
+                    {% if site.social.stack_overflow %}<li><a href="http://stackoverflow.com/users/{{ site.social.stack_overflow }}"><img src="{{ get_asset('images/social/stack-overflow.png') }}" width="16" height="16" alt="Stack Overflow"></a></li>{% endif %}
+                    {% if site.social.steam %}<li><a href="http://steamcommunity.com/id/{{ site.social.steam }}"><img src="{{ get_asset('images/social/steam.png') }}" width="16" height="16" alt="Steam"></a></li>{% endif %}
+                    {% if site.social.twitter %}<li><a href="https://twitter.com/#!/{{ site.social.twitter }}"><img src="{{ get_asset('images/social/twitter.png') }}" width="16" height="16" alt="Twitter"></a></li>{% endif %}
+                </ul>
+            </div>
+            {% endif %}
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+  </div>
+
+
+    <div class="container">
+        <div id="content">
+            {% block content %}{% endblock %}
+        </div>
+
+<footer>
+        <div id="footer">
+            <p>{% if site.author %}Copyright &copy; {{ none|date('%Y') }} {{ site.author }} &ndash; {% endif %}</p>
+        </div>
+</footer>
+    </div>
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="{{ get_asset('bootstrap/js/bootstrap.min.js') }}"></script>
+</body>
+</html>
