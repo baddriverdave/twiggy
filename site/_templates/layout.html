@@ -8,6 +8,7 @@
 </head>
 
 <body>
+  <div class="wrapper">
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -50,6 +51,8 @@
             {% block content %}{% endblock %}
         </div>
 
+    <div class="push"></div>
+  </div>
 <footer>
         <div id="footer">
             <p>{% if site.author %}Copyright &copy; {{ none|date('%Y') }} {{ site.author }} &ndash; {% endif %}</p>

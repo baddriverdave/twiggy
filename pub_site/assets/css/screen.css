@@ -1,3 +1,24 @@
+
+* {
+	margin: 0;
+}
+html, body {
+	height: 100%;
+}
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -50px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+	height: 50px; /* .push must be the same height as .footer */
+}
+.footer{
+    background: #000;
+    color: #fff;
+}
+`
 body{ background: transparent url('/assets/images/light_noise_diagonal.png') repeat; }
 .navbar-inner{ opacity: 0.9; }
 h1,h2,h3,h4,h5 { font-family: 'Open Sans', serif; }
