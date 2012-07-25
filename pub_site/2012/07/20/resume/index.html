@@ -23,11 +23,6 @@
 
     <!-- Le styles -->
     <link href="/assets/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <style>
-      body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-      }
-    </style>
     <link href="/assets/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/screen.css" type="text/css">
 
@@ -42,47 +37,44 @@
 </head>
 
 <body>
-  <div class="wrapper">
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="/">Dave Bir.ch</a>
-        <div class="nav-collapse">
-            <ul class="nav">
-                <li><a href="/resume/">Resume</a></li>
-                <li><a href="/portfolio/">Portfolio</a></li>
-                <!--<li><a href="/">Blog</a></li>-->
-                
-            </ul>
+<div class="wrapper">
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a class="brand" href="/">Dave Bir.ch</a>
+      <div class="nav-collapse">
+          <ul class="nav">
+              <li><a href="/resume/">Resume</a></li>
+              <li><a href="/portfolio/">Portfolio</a></li>
+              <!--<li><a href="/">Blog</a></li>-->
+              
+          </ul>
 
-            
-            <div class="pull-right">
-                <ul class="nav social">
-                    
-                    
-                    <li><a href="https://github.com/baddriverdave"><img src="/assets/images/social/github.png" width="16" height="16" alt="GitHub"></a></li>
-                    
-                    
-                    
-                    
-                    <li><a href="https://twitter.com/#!/baddriverdave"><img src="/assets/images/social/twitter.png" width="16" height="16" alt="Twitter"></a></li>
-                </ul>
-            </div>
-            
+          
+          <div class="pull-right">
+              <ul class="nav social">
+                   
+                  <li><a href="https://github.com/baddriverdave"><img src="/assets/images/social/github.png" width="16"
+                  height="16" alt="GitHub"></a></li> 
+                   
+                   <li><a href="https://twitter.com/#!/baddriverdave"><img src="/assets/images/social/twitter.png" width="16"
+                  height="16" alt="Twitter"></a></li>
+              </ul>
+          </div>
+          
         </div><!--/.nav-collapse -->
-      </div>
-    </div>
-  </div>
+      </div><!-- /.container -->
+    </div><!-- /.navbar-inner -->
+  </div><!-- /.navbar -->
 
-
-    <div class="container">
-        <div id="content">
-            
+  <div class="page-content container">
+    <div id="content">
+        
     <div class="item">
         <div class="header">
             <h1>Dave Birch</h1>
@@ -166,18 +158,44 @@ Council of Senior Business Administrators at Texas A&amp;M University.</p>
         </div>
     </div>
 
-        </div>
-
-    <div class="push"></div>
-  </div>
-<footer>
-        <div id="footer">
-            <p>Copyright &copy; 2012 Dave Birch &ndash; </p>
-        </div>
-</footer>
     </div>
+
+  </div>
+  <div class="push"></div>
+</div>
+
+<div class="footer">
+    <div class="container padding-top-small">
+      <div class="row">
+          <div class="span4">
+            <h5><a href="mailto: david.w.birch@gmail.com">Contact Me</a></h5>
+          </div>
+          <div class="span8">
+              <h5><a href="https://twitter.com/#!baddriverdave">Recent Tweets</a></h5>
+              <img class="twit-loading hide" src="/assets/images/throbber.gif" alt="Loading" />
+              <div id="jstwitter">
+              </div>
+          </div>
+      </div>
+    </div>
+</div>
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="/assets/js/twitter.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+/*
+$.getJSON("http://twitter.com/statuses/user_timeline/baddriverdave.json?callback=?", function(data) {
+    console.log(data);
+    $('.twit-loading').fadeOut('slow');
+    $("#twitter_text").html(data[0].text);
+    $("#twitter_av").html('<img src="'+data[0].user.profile_image_url+'" alt="'+data[0].user.screen_name+'" class="twit_img"/>');
+    $("#twitter").fadeIn('slow');
+});
+*/
+
+});
+</script>
 </body>
 </html>
