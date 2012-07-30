@@ -8,7 +8,7 @@
 </head>
 
 <body>
-<div class="wrapper">
+<div class="{% block wrapper %}wrapper{% endblock %}">
   <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
       <div class="container">
@@ -76,14 +76,14 @@
     </div>
 
   </div>
-  <div class="push"></div>
+{% block darker %} {% endblock %}
+  <div class="{% block push %}push{% endblock %}"></div>
 </div>
-
 <div class="footer">
     <div class="container padding-top-small">
       <div class="row">
           <div class="span4">
-            <h5><a href="mailto: david.w.birch@gmail.com">Contact Me</a></h5>
+            <h5><a href="mailto: david.w.birch@gmail.com"><i style="margin-top: 2px;" class="icon-envelope icon-white"></i> Contact Me</a></h5>
           </div>
           <div class="span8">
               <h5><a href="https://twitter.com/#!{{ site.social.twitter }}">Recent Tweets</a></h5>
@@ -110,7 +110,6 @@ $.getJSON("http://twitter.com/statuses/user_timeline/baddriverdave.json?callback
 });
 */
 
-{% block script %} {% endblock %}
 });
 </script>
 </body>
