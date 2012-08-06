@@ -32,7 +32,7 @@
     <![endif]-->
 
 
-
+     
     <title>Dave Bir.ch &ndash; Problem Solver, Front End Developer, Builder.</title>
 </head>
 
@@ -49,8 +49,8 @@
         <a class="brand" href="/">Dave Bir.ch</a>
       <div class="nav-collapse">
           <ul class="nav">
-              <li><a href="/resume/">Resume</a></li>
-              <li><a href="/portfolio/">Portfolio</a></li>
+              <li><a class="cond-link" href="/resume/">Resume</a></li>
+              <li><a class="cond-link" href="/portfolio/">Portfolio</a></li>
               <!--<li><a href="/">Blog</a></li>-->
               
           </ul>
@@ -76,14 +76,21 @@
     <div id="content">
         
     <div class="hero-unit">
-      <h1>
-        Hi. I'm Dave.
-      </h1>
-      <p>
-        I'm a front-end developer, designer, and a lifelong learner.<br/>
-        I love building things, understanding how they work, and trying to improve them.
-      </p>
-      <a class="btn btn-large btn-success" href="/resume/">View My Resume</a>
+      <div class="row">
+        <div class="span3">
+        <img class="hero-photo photo_frame margin-bot-small" src="/assets/images/dave.png" alt="Dave Birch" />
+        </div>
+        <div class="span7">
+        <h1>
+          Hi. I'm Dave.
+        </h1>
+        <p>
+          I'm a front-end developer, designer, and a lifelong learner.<br/>
+          I love building things, understanding how they work, and trying to improve them.
+        </p>
+        <a class="btn btn-large btn-success" href="/resume/">View My Resume</a>
+        </div>
+      </div>
       </div>
       <h2>What I do</h2>
       <div class="row">
@@ -124,7 +131,7 @@
     <div class="container padding-top-small">
       <div class="row">
           <div class="span4">
-            <h5><a href="mailto:me@davebir.ch"><i style="margin-top: 2px;" class="icon-envelope icon-white"></i> Contact Me</a></h5>
+            <h5><a href="mailto:me@davebir.ch"><i class="icon-envelope icon-white"></i> Contact Me</a></h5>
           </div>
           <div class="span8">
               <h5><a href="https://twitter.com/#!baddriverdave">Recent Tweets</a></h5>
@@ -141,15 +148,7 @@
 <script src="/assets/js/twitter.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
-/*
-$.getJSON("http://twitter.com/statuses/user_timeline/baddriverdave.json?callback=?", function(data) {
-    console.log(data);
-    $('.twit-loading').fadeOut('slow');
-    $("#twitter_text").html(data[0].text);
-    $("#twitter_av").html('<img src="'+data[0].user.profile_image_url+'" alt="'+data[0].user.screen_name+'" class="twit_img"/>');
-    $("#twitter").fadeIn('slow');
-});
-*/
+
 
 });
 </script>

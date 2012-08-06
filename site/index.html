@@ -3,14 +3,21 @@
 
 {% block content %}
     <div class="hero-unit">
-      <h1>
-        Hi. I'm Dave.
-      </h1>
-      <p>
-        I'm a front-end developer, designer, and a lifelong learner.<br/>
-        I love building things, understanding how they work, and trying to improve them.
-      </p>
-      <a class="btn btn-large btn-success" href="{{ get_url('resume/') }}">View My Resume</a>
+      <div class="row">
+        <div class="span3">
+        <img class="hero-photo photo_frame margin-bot-small" src="{{ get_asset('images/dave.png') }}" alt="Dave Birch" />
+        </div>
+        <div class="span7">
+        <h1>
+          Hi. I'm Dave.
+        </h1>
+        <p>
+          I'm a front-end developer, designer, and a lifelong learner.<br/>
+          I love building things, understanding how they work, and trying to improve them.
+        </p>
+        <a class="btn btn-large btn-success" href="{{ get_url('resume/') }}">View My Resume</a>
+        </div>
+      </div>
       </div>
       <h2>What I do</h2>
       <div class="row">

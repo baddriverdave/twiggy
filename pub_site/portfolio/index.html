@@ -32,6 +32,8 @@
     <![endif]-->
 
 
+    
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
 
     <title>Dave Birch &ndash; Dave Bir.ch</title>
 </head>
@@ -49,8 +51,8 @@
         <a class="brand" href="/">Dave Bir.ch</a>
       <div class="nav-collapse">
           <ul class="nav">
-              <li><a href="/resume/">Resume</a></li>
-              <li><a href="/portfolio/">Portfolio</a></li>
+              <li><a class="cond-link" href="/resume/">Resume</a></li>
+              <li><a class="cond-link" href="/portfolio/">Portfolio</a></li>
               <!--<li><a href="/">Blog</a></li>-->
               
           </ul>
@@ -79,10 +81,10 @@
 </div>
 <div class="row">
     <div class="span2">
-          <h1>Portfolio</h1>
+          <h1 class="caps">Portfolio</h1>
     </div>
     <div class="span8">
-        <div class="portfolio-frame">
+        <div id="webdev_port" class="portfolio-frame">
           <div id="webCarousel" class="carousel slide">
             <div class="carousel-inner">
               <div class="item active">
@@ -152,32 +154,125 @@
             <a class="left carousel-control" href="#webCarousel" data-slide="prev">&lsaquo;</a>
             <a class="right carousel-control" href="#webCarousel" data-slide="next">&rsaquo;</a>
           </div>
+          <div class="box-shadow"><img src="/assets/images/portfolio_shadow.png" alt="bg shadow"/></div>
+        </div><!-- end webdev portfolio -->
 
+        <div id="design_port" class="hide portfolio-frame">
+          <div id="designCarousel" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="/assets/images/portfolio/sno_cards.jpg" alt="Snoball Identity">
+                    <div class="carousel-caption">
+                      <h4>Snoball</h4>
+                      <div class="pull-right">
+                      </div>
+                      <p>
+                      Designed logo, branding, business cards and other identity.
+                      </p>
+                    </div>
+              </div>
+              <div class="item">
+                <img src="/assets/images/portfolio/blink_print.jpg" alt="Blinksend Onesheet">
+                    <div class="carousel-caption">
+                      <h4>Blinksend</h4>
+                      <div class="pull-right">
+                      </div>
+                      <p>
+                      Designed logo, branding, business cards and other identity.
+                      </p>
+                      <p class="smaller"><b>Technology Used:</b> Javascript, CSS, HTML, Python (Django), Adobe CS</p>
+                    </div>
+              </div>
+              <div class="item">
+                <img src="/assets/images/portfolio/sno_onesheet.jpg" alt="Snoball One Sheet">
+                    <div class="carousel-caption">
+                      <h4>Snoball</h4>
+                      <div class="pull-right">
+                      </div>
+                      <p>
+                      Developed various promotional material for snoball.
+                      </p>
+                    </div>
+              </div>
+              <div class="item">
+                <img src="/assets/images/portfolio/vpapit_booth.jpg" alt="VPAPIT Booth">
+                    <div class="carousel-caption">
+                      <h4>New Faculty Orientation Booth</h4>
+                      <div class="pull-right">
+                      <a class="btn btn-success" href="http://www.mygeoreader.com">Visit Site</a>
+                      </div>
+                      <p>
+                      Developed unique brand system for the Vice President and Associate Provost for Information Technology
+                      while at Texas A&M University.
+                      </p>
+                    </div>
+              </div>
+            </div>
+            <a class="left carousel-control" href="#designCarousel" data-slide="prev">&lsaquo;</a>
+            <a class="right carousel-control" href="#designCarousel" data-slide="next">&rsaquo;</a>
+          </div>
+          <div class="box-shadow"><img src="/assets/images/portfolio_shadow.png" alt="bg shadow"/></div>
+        </div><!-- end print portfolio -->
+        <div id="multimedia_port" class="hide portfolio-frame">
+          <div id="multimediaCarousel" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="/assets/images/portfolio/sno_vid.jpg" alt="Snoball">
+                    <div class="carousel-caption">
+                      <h4>Snoball marketing video</h4>
+                      <div class="pull-right">
+                      <a class="btn btn-success" href="http://www.youtube.com/watch?v=e00ZvrVD8bY">Watch Video</a>
+                      </div>
+                      <p>
+                      Developed video to articulate the value proposition for Snoball.
+                      </p>
+                      <p class="smaller"><b>Technology Used:</b> After Effects, Illustrator, Soundbooth</p>
+                    </div>
+              </div>
+              <div class="item">
+                <img src="/assets/images/portfolio/blink_vid.jpg" alt="Blinksend">
+                    <div class="carousel-caption">
+                      <h4>Blinksend marketing video</h4>
+                      <div class="pull-right">
+                      <a class="btn btn-success" href="http://www.youtube.com/watch?v=awMD-BCr4kA">Watch Video</a>
+                      </div>
+                      <p>
+                      Developed video to articulate the value proposition for BlinkSend.
+                      </p>
+                      <p class="smaller"><b>Technology Used:</b> After Effects, Illustrator, Soundbooth</p>
+                    </div>
+              </div>
+              <div class="item">
+                <img src="/assets/images/portfolio/howdy_vid.jpg" alt="Howdy">
+                    <div class="carousel-caption">
+                      <h4>Howdy.tamu.edu promotional video</h4>
+                      <div class="pull-right">
+                      <a class="btn btn-success" href="http://www.youtube.com/watch?v=Dp14dQXfbGo&list=UUcltz8jlhUhg-U9LSCgugLg&index=3&feature=plcp">Watch Video</a>
+                      </div>
+                      <p>
+                      Co-developed video to introduce Texas A&M Community members to new University Portal
+                      </p>
+                      <p class="smaller"><b>Technology Used:</b> After Effects, Illustrator, Soundbooth</p>
+                    </div>
+              </div>
+            </div>
+            <a class="left carousel-control" href="#multimediaCarousel" data-slide="prev">&lsaquo;</a>
+            <a class="right carousel-control" href="#multimediaCarousel" data-slide="next">&rsaquo;</a>
+          </div>
+          <div class="box-shadow"><img src="/assets/images/portfolio_shadow.png" alt="bg shadow"/></div>
+        </div><!-- end webdev portfolio -->
+
+
+        <div class="port-links center">
+            <p class="cond-link unstyled">
+                <a href="#" id="webdev">Web Dev</a>
+                <a class="padding-left-large padding-right-large" href="#" id="design">Design</a>
+                <a href="#" id="multimedia">Multimedia</a>
+            </p>
         </div>
-        <div class="box-shadow"><img src="/assets/images/portfolio_shadow.png" alt="bg shadow"/></div>
     </div>
     <div class="span2"></div>
 </div>
-<!--
-<div class="row">
-    <div class="offset2 span8">
-    <div class="portfolio-picker">
-    <a href="#" id="web" class="portfolio-option">
-    Web Development
-    </a>
-    <a href="#" id="interactive" class="portfolio-option">
-    Interactive Design
-    </a>
-    <a href="#" id="print" class="portfolio-option">
-    Print Design
-    </a>
-    </div>
-    </div>
-    <div class="span2">
-    </div>
-</div>
--->
-
 
     </div>
 
@@ -192,7 +287,7 @@
     <div class="container padding-top-small">
       <div class="row">
           <div class="span4">
-            <h5><a href="mailto:me@davebir.ch"><i style="margin-top: 2px;" class="icon-envelope icon-white"></i> Contact Me</a></h5>
+            <h5><a href="mailto:me@davebir.ch"><i class="icon-envelope icon-white"></i> Contact Me</a></h5>
           </div>
           <div class="span8">
               <h5><a href="https://twitter.com/#!baddriverdave">Recent Tweets</a></h5>
@@ -209,15 +304,38 @@
 <script src="/assets/js/twitter.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
-/*
-$.getJSON("http://twitter.com/statuses/user_timeline/baddriverdave.json?callback=?", function(data) {
-    console.log(data);
-    $('.twit-loading').fadeOut('slow');
-    $("#twitter_text").html(data[0].text);
-    $("#twitter_av").html('<img src="'+data[0].user.profile_image_url+'" alt="'+data[0].user.screen_name+'" class="twit_img"/>');
-    $("#twitter").fadeIn('slow');
+
+$('#webdev').click(function() {
+    $('.portfolio-frame:visible').fadeOut('fast', function() {
+      $('#webdev_port').fadeIn('fast', function() {
+        $('#webCarousel div.item').removeClass('left').removeClass('next');
+      });
+    });
 });
-*/
+$('#design').click(function() {
+    $('.portfolio-frame:visible').fadeOut('fast', function() {
+      $('#design_port').fadeIn('fast', function() {
+        $('#designCarousel div.item').removeClass('left').removeClass('next');
+      });
+    });
+});
+$('#multimedia').click(function() {
+    $('.portfolio-frame:visible').fadeOut('fast', function() {
+      $('#multimedia_port').fadeIn('fast', function() {
+        $('#multimediaCarousel div.item').removeClass('left').removeClass('next');
+      });
+    });
+});
+
+function startCarousel() {
+  $('.carousel').each(function() {
+      $(this).carousel( {
+      interval: 2000,
+      pause: 'hover'
+    });
+  });
+}
+startCarousel();
 
 });
 </script>

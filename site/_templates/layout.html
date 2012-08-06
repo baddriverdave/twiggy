@@ -3,7 +3,7 @@
 <html>
 <head>
     {% include 'page.header.html' %}
-
+    {% block head %} {% endblock %}
     {% if site.title %}<title>{% if title %}{{ title }} &ndash; {% endif %}{{ site.title }}{% if not title and site.subtitle %} &ndash; {{ site.subtitle }}{% endif %}</title>{% endif %}
 </head>
 
@@ -20,8 +20,8 @@
         <a class="brand" href="{{ get_url() }}">{{ site.title }}</a>
       <div class="nav-collapse">
           <ul class="nav">
-              <li><a href="{{ get_url('resume/') }}">Resume</a></li>
-              <li><a href="{{ get_url('portfolio/') }}">Portfolio</a></li>
+              <li><a class="cond-link" href="{{ get_url('resume/') }}">Resume</a></li>
+              <li><a class="cond-link" href="{{ get_url('portfolio/') }}">Portfolio</a></li>
               <!--<li><a href="{{ get_url() }}">Blog</a></li>-->
               {% if site.feed %}<li><a href="{{ get_url('feed.xml') }}">Feed</a></li>{% endif %}
           </ul>
@@ -83,7 +83,7 @@
     <div class="container padding-top-small">
       <div class="row">
           <div class="span4">
-            <h5><a href="mailto:me@davebir.ch"><i style="margin-top: 2px;" class="icon-envelope icon-white"></i> Contact Me</a></h5>
+            <h5><a href="mailto:me@davebir.ch"><i class="icon-envelope icon-white"></i> Contact Me</a></h5>
           </div>
           <div class="span8">
               <h5><a href="https://twitter.com/#!{{ site.social.twitter }}">Recent Tweets</a></h5>
@@ -100,16 +100,8 @@
 <script src="{{ get_asset('js/twitter.js') }}"></script>
 <script type="text/javascript">
 $(document).ready(function(){
-/*
-$.getJSON("http://twitter.com/statuses/user_timeline/baddriverdave.json?callback=?", function(data) {
-    console.log(data);
-    $('.twit-loading').fadeOut('slow');
-    $("#twitter_text").html(data[0].text);
-    $("#twitter_av").html('<img src="'+data[0].user.profile_image_url+'" alt="'+data[0].user.screen_name+'" class="twit_img"/>');
-    $("#twitter").fadeIn('slow');
-});
-*/
-
+{% block script %}
+{% endblock %}
 });
 </script>
 </body>
