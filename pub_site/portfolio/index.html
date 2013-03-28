@@ -49,7 +49,7 @@
           <span class="icon-bar"></span>
         </a>
         <a class="brand" href="/">Dave Bir.ch</a>
-      <div class="nav-collapse">
+      <div class="nav-collapse collapse">
           <ul class="nav">
               <li><a class="cond-link" href="/resume/">Resume</a></li>
               <li><a class="cond-link" href="/portfolio/">Portfolio</a></li>
@@ -58,7 +58,7 @@
           </ul>
 
           
-          <div class="pull-right">
+          <div class="hidden-phone hidden-tablet pull-right">
               <ul class="nav social">
                    
                   <li><a href="https://github.com/baddriverdave"><img src="/assets/images/social/github.png" width="16"
@@ -102,7 +102,7 @@
                     </div>
               </div>
               <div class="item">
-                <img src="/assets/images/portfolio/blinksend.jpg" alt="Blinksend">
+                <img lazy-src="/assets/images/portfolio/blinksend.jpg" alt="Blinksend">
                     <div class="carousel-caption">
                       <h4>Blinksend</h4>
                       <div class="pull-right">
@@ -115,7 +115,7 @@
                     </div>
               </div>
               <div class="item">
-                <img src="/assets/images/portfolio/phodder.jpg" alt="Phodder">
+                <img lazy-src="/assets/images/portfolio/phodder.jpg" alt="Phodder">
                     <div class="carousel-caption">
                       <h4>Phodder</h4>
                       <div class="pull-right">
@@ -128,7 +128,7 @@
                     </div>
               </div>
               <div class="item">
-                <img src="/assets/images/portfolio/georeader.jpg" alt="Georeader">
+                <img lazy-src="/assets/images/portfolio/georeader.jpg" alt="Georeader">
                     <div class="carousel-caption">
                       <h4>Georeader</h4>
                       <div class="pull-right">
@@ -141,7 +141,7 @@
                     </div>
               </div>
               <div class="item">
-                <img src="/assets/images/portfolio/ngvintage.jpg" alt="Northgate Vinage">
+                <img lazy-src="/assets/images/portfolio/ngvintage.jpg" alt="Northgate Vinage">
                     <div class="carousel-caption">
                       <h4>Northgate Vintage</h4>
                       <p>
@@ -161,7 +161,7 @@
           <div id="designCarousel" class="carousel slide">
             <div class="carousel-inner">
               <div class="item active">
-                <img src="/assets/images/portfolio/sno_cards.jpg" alt="Snoball Identity">
+                <img lazy-src="/assets/images/portfolio/sno_cards.jpg" alt="Snoball Identity">
                     <div class="carousel-caption">
                       <h4>Snoball</h4>
                       <div class="pull-right">
@@ -172,7 +172,7 @@
                     </div>
               </div>
               <div class="item">
-                <img src="/assets/images/portfolio/blink_print.jpg" alt="Blinksend Onesheet">
+                <img lazy-src="/assets/images/portfolio/blink_print.jpg" alt="Blinksend Onesheet">
                     <div class="carousel-caption">
                       <h4>Blinksend</h4>
                       <div class="pull-right">
@@ -184,7 +184,7 @@
                     </div>
               </div>
               <div class="item">
-                <img src="/assets/images/portfolio/sno_onesheet.jpg" alt="Snoball One Sheet">
+                <img lazy-src="/assets/images/portfolio/sno_onesheet.jpg" alt="Snoball One Sheet">
                     <div class="carousel-caption">
                       <h4>Snoball</h4>
                       <div class="pull-right">
@@ -195,7 +195,7 @@
                     </div>
               </div>
               <div class="item">
-                <img src="/assets/images/portfolio/vpapit_booth.jpg" alt="VPAPIT Booth">
+                <img lazy-src="/assets/images/portfolio/vpapit_booth.jpg" alt="VPAPIT Booth">
                     <div class="carousel-caption">
                       <h4>New Faculty Orientation Booth</h4>
                       <div class="pull-right">
@@ -203,7 +203,7 @@
                       </div>
                       <p>
                       Developed unique brand system for the Vice President and Associate Provost for Information Technology
-                      while at Texas A&M University.
+                      while at Texas A&amp;M University.
                       </p>
                     </div>
               </div>
@@ -217,7 +217,7 @@
           <div id="multimediaCarousel" class="carousel slide">
             <div class="carousel-inner">
               <div class="item active">
-                <img src="/assets/images/portfolio/sno_vid.jpg" alt="Snoball">
+                <img lazy-src="/assets/images/portfolio/sno_vid.jpg" alt="Snoball">
                     <div class="carousel-caption">
                       <h4>Snoball marketing video</h4>
                       <div class="pull-right">
@@ -230,7 +230,7 @@
                     </div>
               </div>
               <div class="item">
-                <img src="/assets/images/portfolio/blink_vid.jpg" alt="Blinksend">
+                <img lazy-src="/assets/images/portfolio/blink_vid.jpg" alt="Blinksend">
                     <div class="carousel-caption">
                       <h4>Blinksend marketing video</h4>
                       <div class="pull-right">
@@ -243,7 +243,7 @@
                     </div>
               </div>
               <div class="item">
-                <img src="/assets/images/portfolio/howdy_vid.jpg" alt="Howdy">
+                <img lazy-src="/assets/images/portfolio/howdy_vid.jpg" alt="Howdy">
                     <div class="carousel-caption">
                       <h4>Howdy.tamu.edu promotional video</h4>
                       <div class="pull-right">
@@ -299,9 +299,10 @@
     </div>
 </div>
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/bootstrap/js/bootstrap.js"></script>
 <script src="/assets/bootstrap/js/bootstrap-transition.js"></script>
-<script src="/assets/bootstrap/js/bootstrap-carousel.js"></script>
+<script src="/assets/bootstrap/js/bootstrap-lazy-carousel.js"></script>
 <script src="/assets/js/twitter.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
