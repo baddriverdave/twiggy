@@ -1,4 +1,4 @@
-/**** GLOBAL CSS STRUCTURE
+ GLOBAL CSS STRUCTURE
 
 1) GLOBAL STYLES
 2) MEDIA QUERIES
@@ -190,6 +190,24 @@ body{
     -moz-box-shadow: 0 0 10px #999;
     -webkit-box-shadow: 0 0 10px #999;
 }
+
+.carousel .loading{
+    width:46px;
+    height:46px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    background:#000 url('/assets/images/ajax-loader.gif') no-repeat center center;
+    margin:-23px 0px 0px -23px;
+    z-index:100;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    opacity:0.7;
+}
+.carousel .item {
+    background: #000;
+}
 .carousel-caption p {
     line-height: 1.4em;
 }
@@ -298,6 +316,7 @@ h5 {
     background: transparent url('/assets/images/db_logo.png') no-repeat 20px 5px;
     background-size: 27px 27px;
     opacity: 0.5;
+    width: 40px;
 }
 .brand:hover {
     opacity: 1;
@@ -472,6 +491,10 @@ and (max-device-width : 480px) {
   .photo_frame {
     margin-bottom: 20px;
   }
+  .carousel {
+    height: 100%;
+    width: 100%;
+  }
 }
 /* END - Standard Smartphones/iPhone (portrait and landscape)------ */
 
@@ -515,6 +538,10 @@ and (max-width : 767px) {
   .photo_frame {
     margin-bottom: 20px;
   }
+  .carousel {
+    height: 100%;
+    width: 100%;
+  }
 }
 /* END - Larger Smartphones (portrait) ----- */
 
@@ -553,6 +580,11 @@ and (max-width : 1024px) {
       /*Opera*/
       -o-transform: rotate(-3deg);
   }
+  .carousel {
+    height: 302px;
+    width: 476px;
+  }
+
 }
 /* END - iPads (portrait and landscape) ----- */
 
@@ -608,6 +640,10 @@ and (orientation : portrait) {
       /*Opera*/
       -o-transform: rotate(-6deg);
   }
+  .carousel {
+    height: 392px;
+    width: 620px;
+  }
 
 }
 /* END Other Large Devices ----------- */
@@ -635,6 +671,10 @@ and (orientation : portrait) {
       -webkit-transform: rotate(-6deg);
       /*Opera*/
       -o-transform: rotate(-6deg);
+  }
+  .carousel {
+    height: 485px;
+    width: 770px;
   }
 
 }
